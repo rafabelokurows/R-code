@@ -1,6 +1,7 @@
 # Useful R programming language code snippets
 
-# Obtaining session info only with loaded packages
+
+## Obtaining session info only with loaded packages
 ```
 pacman::p_load(sessioninfo,gt)
 sessioninfo::session_info(include_base = F)$packages %>% 

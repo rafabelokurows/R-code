@@ -5,6 +5,12 @@
 options(scipen = 999)
 ```
 
+## Setting working directory to directory of R script
+Obs: only works in RStudio, doens't work in command line/scheduled task
+```
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+```
+
 ## Obtaining session info only with loaded packages
 ```
 pacman::p_load(sessioninfo,gt)

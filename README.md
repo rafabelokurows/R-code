@@ -96,3 +96,25 @@ sqldf("SELECT tabela1.*,tabela2.* FROM tabela1
             LEFT JOIN calendar
             ON  tabela1.date_field BETWEEN calendar.StartDate  AND calendar.EndDate") 
 ```
+
+## Validate barcode check digit
+As done in: https://www.gs1.org/services/how-calculate-check-digit-manually
+```
+gtin13 <- function(n) {
+  s <- as.character(n)
+  check.sum <- 0
+  for (i in 1:nchar(s)) {
+    digit <- substr(s, nchar(s) - i + 1, nchar(s) - i + 1)
+    check.sum <- check.sum + as.numeric(digit) * ifelse(i %% 2, 3, 1)
+  }
+  if (is.na(check.sum)){
+    return(NA)
+  }
+  finalcheck = 10 - check.sum %% 10
+  if (finalcheck == 10){
+    return(0)
+  }else {
+    return(finalcheck)
+  }
+}
+```

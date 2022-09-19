@@ -5,6 +5,7 @@
 options(scipen = 999)
 ```
 
+
 ## Setting working directory to directory of R script
 Obs: only works in RStudio, doens't work in command line/scheduled task
 ```
@@ -57,6 +58,11 @@ conditionalFormatting(wb, sheet = 1, cols = c(2:((length(Activos)-6))),
                       rule = c(min(valoresGxb),median(valoresGxb),max(valoresGxb)),
                       type="colourScale")
 ```
+
+## Conditional formatting Openxlsx - part 2
+https://stackoverflow.com/questions/55615781/openxlsx-fill-row-row-based-on-text-in-another-column
+
+
 
 # SQL querying
 

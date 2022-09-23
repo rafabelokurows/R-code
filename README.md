@@ -130,3 +130,7 @@ gtin13 <- function(n) {
   }
 }
 ```
+
+## Load several JSON files 
+https://www.linkedin.com/posts/mattdancho_i-was-working-with-662-json-files-today-and-activity-6978886400737693696-rBhA?utm_source=share&utm_medium=member_desktop
+[<img src="https://media-exp1.licdn.com/dms/image/C4E22AQFzkRhL0iE0Kg/feedshare-shrink_800/0/1663896177933?e=1666828800&v=beta&t=bNU9qrH4bDVJzUca76TCLlCUS7THZ6AGziH64Njj7NM">](https://www.linkedin.com/posts/mattdancho_i-was-working-with-662-json-files-today-and-activity-6978886400737693696-rBhA?utm_source=share&utm_medium=member_desktop)

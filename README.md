@@ -139,3 +139,10 @@ https://www.linkedin.com/posts/mattdancho_i-was-working-with-662-json-files-toda
 ```
 df$colname = iconv(df$colname, from="UTF-8", to="LATIN1")
 ```
+
+## Filter only the first N groups of a Dplyr dataframe
+```
+first_group = function(x,n=1){
+  x %>% nest %>% ungroup %>% slice(1:n) %>% unnest(data)
+}
+```

@@ -146,3 +146,13 @@ first_group = function(x,n=1){
   x %>% nest %>% ungroup %>% slice(1:n) %>% unnest(data)
 }
 ```
+
+## GGplot stuff
+https://www.mitchhenderson.org/2020/04/how-sports-scientists-can-use-ggplot2-in-r-to-make-better-visualisations/
+
+* Adicionando imagem à plot  
+* Tema escuro
+
+https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2
+
+* Label no fim de lineplot

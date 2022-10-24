@@ -150,9 +150,14 @@ first_group = function(x,n=1){
 ## GGplot stuff
 https://www.mitchhenderson.org/2020/04/how-sports-scientists-can-use-ggplot2-in-r-to-make-better-visualisations/
 
-* Adicionando imagem à plot  
+* Adicionando imagem à plot  - imagem livre, com base na posição
 * Tema escuro
 
 https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2
 
 * Label no fim de lineplot
+
+https://dm13450.github.io/2021/02/01/PointsToImages.html
+https://statsbylopez.netlify.app/post/nfl-team-logos-using-ggimage/
+
+* Adicionando imagem à scatter plot

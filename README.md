@@ -5,7 +5,6 @@
 options(scipen = 999)
 ```
 
-
 ## Setting working directory to directory of R script
 Obs: only works in RStudio, doens't work in command line/scheduled task
 ```

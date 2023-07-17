@@ -1,5 +1,12 @@
 # Useful R programming language code snippets
 
+## Parameterized SQL queries
+```
+query_att_prod = glue_sql("SELECT * FROM MT0520 where product  IN({vals*}) ",
+                          vals = unique(prods2$PRODUCT), .con = con)
+atr_prods =  DBI::dbGetQuery(con, query_att_prod)
+```
+
 ## No Scientific Numeric digits 
 ```
 options(scipen = 999)

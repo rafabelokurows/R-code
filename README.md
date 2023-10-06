@@ -12,6 +12,25 @@ atr_prods =  DBI::dbGetQuery(con, query_att_prod)
 options(scipen = 999)
 ```
 
+## Saving variables in the middle of a pipe chain
+```
+c = cars %>% mutate(var1 = dist*speed)%>%
+   {. ->> b } %>%   #here is save
+   summary()
+   c
+   head(b)
+```
+
+OR 
+```
+library(tidyverse)
+library(magrittr)
+
+SummaryVal <- cars %>% mutate(kmh = dist/speed) %T>% 
+              assign("MyValue",.,envir = .GlobalEnv) %>% 
+              summary()
+```
+
 ## Treating directory name on Windows
 ```
 pathPrep <- function(path = "clipboard") {
